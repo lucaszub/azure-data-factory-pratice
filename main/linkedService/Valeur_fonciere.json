@@ -1,0 +1,12 @@
+{
+	"name": "Valeur_fonciere",
+	"properties": {
+		"annotations": [],
+		"type": "HttpServer",
+		"typeProperties": {
+			"url": "https://www.data.gouv.fr/api/1/datasets/r/",
+			"enableServerCertificateValidation": true,
+			"authenticationType": "Anonymous"
+		}
+	}
+}
