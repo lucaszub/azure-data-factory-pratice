@@ -1,5 +1,5 @@
 {
-	"name": "pipeline1",
+	"name": "dvf",
 	"properties": {
 		"activities": [
 			{
@@ -37,7 +37,7 @@
 						"mappings": [
 							{
 								"source": {
-									"name": "Identifiant de document",
+									"name": "Identifiant de document|Reference document|1 Articles CGI|2 Articles CGI|3 Articles CGI|4 Articles CGI|5 Articles CGI|No disposition|Date mutation|Nature mutation|Valeur fonciere|No voie|B/T/Q|Type de voie|Code voie|Voie|Code postal|Commune|Code departement|Code commune|Prefixe de section|Section|No plan|No Volume|1er lot|Surface Carrez du 1er lot|2eme lot|Surface Carrez du 2eme lot|3eme lot|Surface Carrez du 3eme lot|4eme lot|Surface Carrez du 4eme lot|5eme lot|Surface Carrez du 5eme lot|Nombre de lots|Code type local|Type local|Identifiant local|Surface reelle bati|Nombre pieces principales|Nature culture|Nature culture speciale|Surface terrain",
 									"type": "String",
 									"physicalType": "String"
 								},
@@ -49,9 +49,7 @@
 							},
 							{
 								"source": {
-									"name": "Reference document",
-									"type": "String",
-									"physicalType": "String"
+									"name": "Reference document"
 								},
 								"sink": {
 									"name": "Reference document",
@@ -61,9 +59,7 @@
 							},
 							{
 								"source": {
-									"name": "1 Articles CGI",
-									"type": "String",
-									"physicalType": "String"
+									"name": "1 Articles CGI"
 								},
 								"sink": {
 									"name": "1 Articles CGI",
@@ -72,11 +68,6 @@
 								}
 							},
 							{
-								"source": {
-									"name": "2 Articles CGI",
-									"type": "String",
-									"physicalType": "String"
-								},
 								"sink": {
 									"name": "2 Articles CGI",
 									"type": "String",
@@ -84,11 +75,6 @@
 								}
 							},
 							{
-								"source": {
-									"name": "3 Articles CGI",
-									"type": "String",
-									"physicalType": "String"
-								},
 								"sink": {
 									"name": "3 Articles CGI",
 									"type": "String",
@@ -96,11 +82,6 @@
 								}
 							},
 							{
-								"source": {
-									"name": "4 Articles CGI",
-									"type": "String",
-									"physicalType": "String"
-								},
 								"sink": {
 									"name": "4 Articles CGI",
 									"type": "String",
@@ -108,11 +89,6 @@
 								}
 							},
 							{
-								"source": {
-									"name": "5 Articles CGI",
-									"type": "String",
-									"physicalType": "String"
-								},
 								"sink": {
 									"name": "5 Articles CGI",
 									"type": "String",
@@ -120,11 +96,6 @@
 								}
 							},
 							{
-								"source": {
-									"name": "No disposition",
-									"type": "String",
-									"physicalType": "String"
-								},
 								"sink": {
 									"name": "No disposition",
 									"type": "String",
@@ -132,11 +103,6 @@
 								}
 							},
 							{
-								"source": {
-									"name": "Date mutation",
-									"type": "String",
-									"physicalType": "String"
-								},
 								"sink": {
 									"name": "Date mutation",
 									"type": "String",
@@ -144,11 +110,6 @@
 								}
 							},
 							{
-								"source": {
-									"name": "Nature mutation",
-									"type": "String",
-									"physicalType": "String"
-								},
 								"sink": {
 									"name": "Nature mutation",
 									"type": "String",
@@ -156,11 +117,6 @@
 								}
 							},
 							{
-								"source": {
-									"name": "Valeur fonciere",
-									"type": "String",
-									"physicalType": "String"
-								},
 								"sink": {
 									"name": "Valeur fonciere",
 									"type": "String",
@@ -168,11 +124,6 @@
 								}
 							},
 							{
-								"source": {
-									"name": "No voie",
-									"type": "String",
-									"physicalType": "String"
-								},
 								"sink": {
 									"name": "No voie",
 									"type": "String",
@@ -180,11 +131,6 @@
 								}
 							},
 							{
-								"source": {
-									"name": "B/T/Q",
-									"type": "String",
-									"physicalType": "String"
-								},
 								"sink": {
 									"name": "B/T/Q",
 									"type": "String",
@@ -192,11 +138,6 @@
 								}
 							},
 							{
-								"source": {
-									"name": "Type de voie",
-									"type": "String",
-									"physicalType": "String"
-								},
 								"sink": {
 									"name": "Type de voie",
 									"type": "String",
@@ -204,11 +145,6 @@
 								}
 							},
 							{
-								"source": {
-									"name": "Code voie",
-									"type": "String",
-									"physicalType": "String"
-								},
 								"sink": {
 									"name": "Code voie",
 									"type": "String",
@@ -216,11 +152,6 @@
 								}
 							},
 							{
-								"source": {
-									"name": "Voie",
-									"type": "String",
-									"physicalType": "String"
-								},
 								"sink": {
 									"name": "Voie",
 									"type": "String",
@@ -228,11 +159,6 @@
 								}
 							},
 							{
-								"source": {
-									"name": "Code postal",
-									"type": "String",
-									"physicalType": "String"
-								},
 								"sink": {
 									"name": "Code postal",
 									"type": "String",
@@ -240,11 +166,6 @@
 								}
 							},
 							{
-								"source": {
-									"name": "Commune",
-									"type": "String",
-									"physicalType": "String"
-								},
 								"sink": {
 									"name": "Commune",
 									"type": "String",
@@ -252,11 +173,6 @@
 								}
 							},
 							{
-								"source": {
-									"name": "Code departement",
-									"type": "String",
-									"physicalType": "String"
-								},
 								"sink": {
 									"name": "Code departement",
 									"type": "String",
@@ -264,11 +180,6 @@
 								}
 							},
 							{
-								"source": {
-									"name": "Code commune",
-									"type": "String",
-									"physicalType": "String"
-								},
 								"sink": {
 									"name": "Code commune",
 									"type": "String",
@@ -276,11 +187,6 @@
 								}
 							},
 							{
-								"source": {
-									"name": "Prefixe de section",
-									"type": "String",
-									"physicalType": "String"
-								},
 								"sink": {
 									"name": "Prefixe de section",
 									"type": "String",
@@ -288,11 +194,6 @@
 								}
 							},
 							{
-								"source": {
-									"name": "Section",
-									"type": "String",
-									"physicalType": "String"
-								},
 								"sink": {
 									"name": "Section",
 									"type": "String",
@@ -300,11 +201,6 @@
 								}
 							},
 							{
-								"source": {
-									"name": "No plan",
-									"type": "String",
-									"physicalType": "String"
-								},
 								"sink": {
 									"name": "No plan",
 									"type": "String",
@@ -312,11 +208,6 @@
 								}
 							},
 							{
-								"source": {
-									"name": "No Volume",
-									"type": "String",
-									"physicalType": "String"
-								},
 								"sink": {
 									"name": "No Volume",
 									"type": "String",
@@ -324,11 +215,6 @@
 								}
 							},
 							{
-								"source": {
-									"name": "1er lot",
-									"type": "String",
-									"physicalType": "String"
-								},
 								"sink": {
 									"name": "1er lot",
 									"type": "String",
@@ -336,11 +222,6 @@
 								}
 							},
 							{
-								"source": {
-									"name": "Surface Carrez du 1er lot",
-									"type": "String",
-									"physicalType": "String"
-								},
 								"sink": {
 									"name": "Surface Carrez du 1er lot",
 									"type": "String",
@@ -348,11 +229,6 @@
 								}
 							},
 							{
-								"source": {
-									"name": "2eme lot",
-									"type": "String",
-									"physicalType": "String"
-								},
 								"sink": {
 									"name": "2eme lot",
 									"type": "String",
@@ -360,11 +236,6 @@
 								}
 							},
 							{
-								"source": {
-									"name": "Surface Carrez du 2eme lot",
-									"type": "String",
-									"physicalType": "String"
-								},
 								"sink": {
 									"name": "Surface Carrez du 2eme lot",
 									"type": "String",
@@ -372,11 +243,6 @@
 								}
 							},
 							{
-								"source": {
-									"name": "3eme lot",
-									"type": "String",
-									"physicalType": "String"
-								},
 								"sink": {
 									"name": "3eme lot",
 									"type": "String",
@@ -384,11 +250,6 @@
 								}
 							},
 							{
-								"source": {
-									"name": "Surface Carrez du 3eme lot",
-									"type": "String",
-									"physicalType": "String"
-								},
 								"sink": {
 									"name": "Surface Carrez du 3eme lot",
 									"type": "String",
@@ -396,11 +257,6 @@
 								}
 							},
 							{
-								"source": {
-									"name": "4eme lot",
-									"type": "String",
-									"physicalType": "String"
-								},
 								"sink": {
 									"name": "4eme lot",
 									"type": "String",
@@ -408,11 +264,6 @@
 								}
 							},
 							{
-								"source": {
-									"name": "Surface Carrez du 4eme lot",
-									"type": "String",
-									"physicalType": "String"
-								},
 								"sink": {
 									"name": "Surface Carrez du 4eme lot",
 									"type": "String",
@@ -420,11 +271,6 @@
 								}
 							},
 							{
-								"source": {
-									"name": "5eme lot",
-									"type": "String",
-									"physicalType": "String"
-								},
 								"sink": {
 									"name": "5eme lot",
 									"type": "String",
@@ -432,11 +278,6 @@
 								}
 							},
 							{
-								"source": {
-									"name": "Surface Carrez du 5eme lot",
-									"type": "String",
-									"physicalType": "String"
-								},
 								"sink": {
 									"name": "Surface Carrez du 5eme lot",
 									"type": "String",
@@ -444,11 +285,6 @@
 								}
 							},
 							{
-								"source": {
-									"name": "Nombre de lots",
-									"type": "String",
-									"physicalType": "String"
-								},
 								"sink": {
 									"name": "Nombre de lots",
 									"type": "String",
@@ -456,11 +292,6 @@
 								}
 							},
 							{
-								"source": {
-									"name": "Code type local",
-									"type": "String",
-									"physicalType": "String"
-								},
 								"sink": {
 									"name": "Code type local",
 									"type": "String",
@@ -468,11 +299,6 @@
 								}
 							},
 							{
-								"source": {
-									"name": "Type local",
-									"type": "String",
-									"physicalType": "String"
-								},
 								"sink": {
 									"name": "Type local",
 									"type": "String",
@@ -480,11 +306,6 @@
 								}
 							},
 							{
-								"source": {
-									"name": "Identifiant local",
-									"type": "String",
-									"physicalType": "String"
-								},
 								"sink": {
 									"name": "Identifiant local",
 									"type": "String",
@@ -492,11 +313,6 @@
 								}
 							},
 							{
-								"source": {
-									"name": "Surface reelle bati",
-									"type": "String",
-									"physicalType": "String"
-								},
 								"sink": {
 									"name": "Surface reelle bati",
 									"type": "String",
@@ -504,11 +320,6 @@
 								}
 							},
 							{
-								"source": {
-									"name": "Nombre pieces principales",
-									"type": "String",
-									"physicalType": "String"
-								},
 								"sink": {
 									"name": "Nombre pieces principales",
 									"type": "String",
@@ -516,11 +327,6 @@
 								}
 							},
 							{
-								"source": {
-									"name": "Nature culture",
-									"type": "String",
-									"physicalType": "String"
-								},
 								"sink": {
 									"name": "Nature culture",
 									"type": "String",
@@ -528,11 +334,6 @@
 								}
 							},
 							{
-								"source": {
-									"name": "Nature culture speciale",
-									"type": "String",
-									"physicalType": "String"
-								},
 								"sink": {
 									"name": "Nature culture speciale",
 									"type": "String",
@@ -540,11 +341,6 @@
 								}
 							},
 							{
-								"source": {
-									"name": "Surface terrain",
-									"type": "String",
-									"physicalType": "String"
-								},
 								"sink": {
 									"name": "Surface terrain",
 									"type": "String",

@@ -14,10 +14,10 @@
 				"folderPath": "dvf/2025",
 				"fileSystem": "raw"
 			},
-			"columnDelimiter": "Pipe (|)",
-			"escapeChar": "\\",
+			"columnDelimiter": "|",
+			"escapeChar": "",
 			"firstRowAsHeader": true,
-			"quoteChar": "\""
+			"quoteChar": ""
 		},
 		"schema": []
 	}
