@@ -4,7 +4,7 @@
 		"annotations": [],
 		"type": "HttpServer",
 		"typeProperties": {
-			"url": "https://odre.opendatasoft.com/api/explore/v2.1/catalog/datasets/eco2mix-metropoles-tr/exports/csv?lang=fr&refine=date_heure%3A%222026%2F01%22&timezone=Europe%2FParis&use_labels=true&delimiter=%3B",
+			"url": "https://odre.opendatasoft.com/api/explore/v2.1/catalog/datasets/eco2mix-metropoles-tr/exports/csv",
 			"enableServerCertificateValidation": true,
 			"authenticationType": "Anonymous"
 		}
