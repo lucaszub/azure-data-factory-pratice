@@ -1,0 +1,189 @@
+{
+	"name": "dvf_silver",
+	"properties": {
+		"linkedServiceName": {
+			"referenceName": "AzureSqlDatabase1",
+			"type": "LinkedServiceReference"
+		},
+		"annotations": [],
+		"type": "AzureSqlTable",
+		"schema": [
+			{
+				"name": "Identifiant de document",
+				"type": "nvarchar"
+			},
+			{
+				"name": "Reference document",
+				"type": "nvarchar"
+			},
+			{
+				"name": "1 Articles CGI",
+				"type": "nvarchar"
+			},
+			{
+				"name": "2 Articles CGI",
+				"type": "nvarchar"
+			},
+			{
+				"name": "3 Articles CGI",
+				"type": "nvarchar"
+			},
+			{
+				"name": "4 Articles CGI",
+				"type": "nvarchar"
+			},
+			{
+				"name": "5 Articles CGI",
+				"type": "nvarchar"
+			},
+			{
+				"name": "No disposition",
+				"type": "nvarchar"
+			},
+			{
+				"name": "Date mutation",
+				"type": "nvarchar"
+			},
+			{
+				"name": "Nature mutation",
+				"type": "nvarchar"
+			},
+			{
+				"name": "Valeur fonciere",
+				"type": "nvarchar"
+			},
+			{
+				"name": "No voie",
+				"type": "nvarchar"
+			},
+			{
+				"name": "B/T/Q",
+				"type": "nvarchar"
+			},
+			{
+				"name": "Type de voie",
+				"type": "nvarchar"
+			},
+			{
+				"name": "Code voie",
+				"type": "nvarchar"
+			},
+			{
+				"name": "Voie",
+				"type": "nvarchar"
+			},
+			{
+				"name": "Code postal",
+				"type": "nvarchar"
+			},
+			{
+				"name": "Commune",
+				"type": "nvarchar"
+			},
+			{
+				"name": "Code departement",
+				"type": "nvarchar"
+			},
+			{
+				"name": "Code commune",
+				"type": "nvarchar"
+			},
+			{
+				"name": "Prefixe de section",
+				"type": "nvarchar"
+			},
+			{
+				"name": "Section",
+				"type": "nvarchar"
+			},
+			{
+				"name": "No plan",
+				"type": "nvarchar"
+			},
+			{
+				"name": "No Volume",
+				"type": "nvarchar"
+			},
+			{
+				"name": "1er lot",
+				"type": "nvarchar"
+			},
+			{
+				"name": "Surface Carrez du 1er lot",
+				"type": "nvarchar"
+			},
+			{
+				"name": "2eme lot",
+				"type": "nvarchar"
+			},
+			{
+				"name": "Surface Carrez du 2eme lot",
+				"type": "nvarchar"
+			},
+			{
+				"name": "3eme lot",
+				"type": "nvarchar"
+			},
+			{
+				"name": "Surface Carrez du 3eme lot",
+				"type": "nvarchar"
+			},
+			{
+				"name": "4eme lot",
+				"type": "nvarchar"
+			},
+			{
+				"name": "Surface Carrez du 4eme lot",
+				"type": "nvarchar"
+			},
+			{
+				"name": "5eme lot",
+				"type": "nvarchar"
+			},
+			{
+				"name": "Surface Carrez du 5eme lot",
+				"type": "nvarchar"
+			},
+			{
+				"name": "Nombre de lots",
+				"type": "nvarchar"
+			},
+			{
+				"name": "Code type local",
+				"type": "nvarchar"
+			},
+			{
+				"name": "Type local",
+				"type": "nvarchar"
+			},
+			{
+				"name": "Identifiant local",
+				"type": "nvarchar"
+			},
+			{
+				"name": "Surface reelle bati",
+				"type": "nvarchar"
+			},
+			{
+				"name": "Nombre pieces principales",
+				"type": "nvarchar"
+			},
+			{
+				"name": "Nature culture",
+				"type": "nvarchar"
+			},
+			{
+				"name": "Nature culture speciale",
+				"type": "nvarchar"
+			},
+			{
+				"name": "Surface terrain",
+				"type": "nvarchar"
+			}
+		],
+		"typeProperties": {
+			"schema": "dbo",
+			"table": "dvv_bronze"
+		}
+	}
+}
