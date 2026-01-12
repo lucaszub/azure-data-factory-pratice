@@ -1,5 +1,5 @@
 {
-	"name": "lake_storage_2025",
+	"name": "lake_storage_2020",
 	"properties": {
 		"linkedServiceName": {
 			"referenceName": "dvf",
@@ -10,8 +10,8 @@
 		"typeProperties": {
 			"location": {
 				"type": "AzureBlobFSLocation",
-				"fileName": "ValeursFoncieres-2025-S1.txt",
-				"folderPath": "dvf/2025",
+				"fileName": "ValeursFoncieres-2020-S2.txt",
+				"folderPath": "dvf/2020",
 				"fileSystem": "raw"
 			},
 			"columnDelimiter": "|",
