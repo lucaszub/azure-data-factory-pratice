@@ -9,7 +9,8 @@
 		"type": "DelimitedText",
 		"typeProperties": {
 			"location": {
-				"type": "HttpServerLocation"
+				"type": "HttpServerLocation",
+				"relativeUrl": "?lang=fr&refine=date_heure%3A%222026%2F01%22&timezone=Europe%2FParis&use_labels=true&delimiter=%3B"
 			},
 			"columnDelimiter": ";",
 			"escapeChar": "\\",

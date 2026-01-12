@@ -1,0 +1,59 @@
+{
+	"name": "AzureSqlTable1",
+	"properties": {
+		"linkedServiceName": {
+			"referenceName": "AzureSqlDatabase1",
+			"type": "LinkedServiceReference"
+		},
+		"annotations": [],
+		"type": "AzureSqlTable",
+		"schema": [
+			{
+				"name": "code_metropole",
+				"type": "int",
+				"precision": 10
+			},
+			{
+				"name": "metropole",
+				"type": "nvarchar"
+			},
+			{
+				"name": "nature",
+				"type": "nvarchar"
+			},
+			{
+				"name": "date_jour",
+				"type": "date"
+			},
+			{
+				"name": "heure",
+				"type": "time",
+				"scale": 0
+			},
+			{
+				"name": "date_heure",
+				"type": "datetimeoffset",
+				"scale": 0
+			},
+			{
+				"name": "consommation_mw",
+				"type": "decimal",
+				"precision": 12,
+				"scale": 3
+			},
+			{
+				"name": "production",
+				"type": "nvarchar"
+			},
+			{
+				"name": "echanges_physiques",
+				"type": "int",
+				"precision": 10
+			}
+		],
+		"typeProperties": {
+			"schema": "dbo",
+			"table": "metropole_energy"
+		}
+	}
+}

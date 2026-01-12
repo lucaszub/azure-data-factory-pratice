@@ -25,11 +25,119 @@
 							"type": "DelimitedTextReadSettings"
 						}
 					},
-					"enableStaging": false
+					"sink": {
+						"type": "AzureSqlSink",
+						"writeBehavior": "insert",
+						"sqlWriterUseTableLock": false
+					},
+					"enableStaging": false,
+					"translator": {
+						"type": "TabularTranslator",
+						"mappings": [
+							{
+								"source": {
+									"name": "Code métropole"
+								},
+								"sink": {
+									"name": "code_metropole",
+									"type": "int",
+									"precision": 10
+								}
+							},
+							{
+								"source": {
+									"name": "Métropole"
+								},
+								"sink": {
+									"name": "metropole",
+									"type": "nvarchar"
+								}
+							},
+							{
+								"source": {
+									"name": "Nature"
+								},
+								"sink": {
+									"name": "nature",
+									"type": "nvarchar"
+								}
+							},
+							{
+								"source": {
+									"name": "Date"
+								},
+								"sink": {
+									"name": "date_jour",
+									"type": "date"
+								}
+							},
+							{
+								"source": {
+									"name": "Heures"
+								},
+								"sink": {
+									"name": "heure",
+									"type": "time",
+									"scale": 0
+								}
+							},
+							{
+								"source": {
+									"name": "Date - Heure"
+								},
+								"sink": {
+									"name": "date_heure",
+									"type": "datetimeoffset",
+									"scale": 0
+								}
+							},
+							{
+								"source": {
+									"name": "Consommation (MW)"
+								},
+								"sink": {
+									"name": "consommation_mw",
+									"type": "decimal",
+									"scale": 3,
+									"precision": 12
+								}
+							},
+							{
+								"source": {
+									"name": "Production"
+								},
+								"sink": {
+									"name": "production",
+									"type": "nvarchar"
+								}
+							},
+							{
+								"source": {
+									"name": "Echanges physiques"
+								},
+								"sink": {
+									"name": "echanges_physiques",
+									"type": "int",
+									"precision": 10
+								}
+							}
+						],
+						"typeConversion": true,
+						"typeConversionSettings": {
+							"allowDataTruncation": true,
+							"treatBooleanAsNumber": false
+						}
+					}
 				},
 				"inputs": [
 					{
 						"referenceName": "csv",
+						"type": "DatasetReference"
+					}
+				],
+				"outputs": [
+					{
+						"referenceName": "AzureSqlTable1",
 						"type": "DatasetReference"
 					}
 				]
