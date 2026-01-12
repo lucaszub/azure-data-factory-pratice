@@ -3,7 +3,7 @@
 	"properties": {
 		"activities": [
 			{
-				"name": "consommation",
+				"name": "dvf_2025",
 				"type": "Copy",
 				"dependsOn": [],
 				"policy": {
@@ -18,27 +18,540 @@
 					"source": {
 						"type": "DelimitedTextSource",
 						"storeSettings": {
-							"type": "HttpReadSettings",
-							"requestMethod": "GET"
+							"type": "AzureBlobFSReadSettings",
+							"recursive": true,
+							"enablePartitionDiscovery": false
 						},
 						"formatSettings": {
 							"type": "DelimitedTextReadSettings"
 						}
 					},
 					"sink": {
-						"type": "DelimitedTextSink",
-						"storeSettings": {
-							"type": "AzureBlobFSWriteSettings"
-						},
-						"formatSettings": {
-							"type": "DelimitedTextWriteSettings",
-							"quoteAllText": true,
-							"fileExtension": ".txt"
-						}
+						"type": "AzureSqlSink",
+						"writeBehavior": "insert",
+						"sqlWriterUseTableLock": false
 					},
 					"enableStaging": false,
 					"translator": {
 						"type": "TabularTranslator",
+						"mappings": [
+							{
+								"source": {
+									"name": "Identifiant de document",
+									"type": "String",
+									"physicalType": "String"
+								},
+								"sink": {
+									"name": "Identifiant de document",
+									"type": "String",
+									"physicalType": "nvarchar"
+								}
+							},
+							{
+								"source": {
+									"name": "Reference document",
+									"type": "String",
+									"physicalType": "String"
+								},
+								"sink": {
+									"name": "Reference document",
+									"type": "String",
+									"physicalType": "nvarchar"
+								}
+							},
+							{
+								"source": {
+									"name": "1 Articles CGI",
+									"type": "String",
+									"physicalType": "String"
+								},
+								"sink": {
+									"name": "1 Articles CGI",
+									"type": "String",
+									"physicalType": "nvarchar"
+								}
+							},
+							{
+								"source": {
+									"name": "2 Articles CGI",
+									"type": "String",
+									"physicalType": "String"
+								},
+								"sink": {
+									"name": "2 Articles CGI",
+									"type": "String",
+									"physicalType": "nvarchar"
+								}
+							},
+							{
+								"source": {
+									"name": "3 Articles CGI",
+									"type": "String",
+									"physicalType": "String"
+								},
+								"sink": {
+									"name": "3 Articles CGI",
+									"type": "String",
+									"physicalType": "nvarchar"
+								}
+							},
+							{
+								"source": {
+									"name": "4 Articles CGI",
+									"type": "String",
+									"physicalType": "String"
+								},
+								"sink": {
+									"name": "4 Articles CGI",
+									"type": "String",
+									"physicalType": "nvarchar"
+								}
+							},
+							{
+								"source": {
+									"name": "5 Articles CGI",
+									"type": "String",
+									"physicalType": "String"
+								},
+								"sink": {
+									"name": "5 Articles CGI",
+									"type": "String",
+									"physicalType": "nvarchar"
+								}
+							},
+							{
+								"source": {
+									"name": "No disposition",
+									"type": "String",
+									"physicalType": "String"
+								},
+								"sink": {
+									"name": "No disposition",
+									"type": "String",
+									"physicalType": "nvarchar"
+								}
+							},
+							{
+								"source": {
+									"name": "Date mutation",
+									"type": "String",
+									"physicalType": "String"
+								},
+								"sink": {
+									"name": "Date mutation",
+									"type": "String",
+									"physicalType": "nvarchar"
+								}
+							},
+							{
+								"source": {
+									"name": "Nature mutation",
+									"type": "String",
+									"physicalType": "String"
+								},
+								"sink": {
+									"name": "Nature mutation",
+									"type": "String",
+									"physicalType": "nvarchar"
+								}
+							},
+							{
+								"source": {
+									"name": "Valeur fonciere",
+									"type": "String",
+									"physicalType": "String"
+								},
+								"sink": {
+									"name": "Valeur fonciere",
+									"type": "String",
+									"physicalType": "nvarchar"
+								}
+							},
+							{
+								"source": {
+									"name": "No voie",
+									"type": "String",
+									"physicalType": "String"
+								},
+								"sink": {
+									"name": "No voie",
+									"type": "String",
+									"physicalType": "nvarchar"
+								}
+							},
+							{
+								"source": {
+									"name": "B/T/Q",
+									"type": "String",
+									"physicalType": "String"
+								},
+								"sink": {
+									"name": "B/T/Q",
+									"type": "String",
+									"physicalType": "nvarchar"
+								}
+							},
+							{
+								"source": {
+									"name": "Type de voie",
+									"type": "String",
+									"physicalType": "String"
+								},
+								"sink": {
+									"name": "Type de voie",
+									"type": "String",
+									"physicalType": "nvarchar"
+								}
+							},
+							{
+								"source": {
+									"name": "Code voie",
+									"type": "String",
+									"physicalType": "String"
+								},
+								"sink": {
+									"name": "Code voie",
+									"type": "String",
+									"physicalType": "nvarchar"
+								}
+							},
+							{
+								"source": {
+									"name": "Voie",
+									"type": "String",
+									"physicalType": "String"
+								},
+								"sink": {
+									"name": "Voie",
+									"type": "String",
+									"physicalType": "nvarchar"
+								}
+							},
+							{
+								"source": {
+									"name": "Code postal",
+									"type": "String",
+									"physicalType": "String"
+								},
+								"sink": {
+									"name": "Code postal",
+									"type": "String",
+									"physicalType": "nvarchar"
+								}
+							},
+							{
+								"source": {
+									"name": "Commune",
+									"type": "String",
+									"physicalType": "String"
+								},
+								"sink": {
+									"name": "Commune",
+									"type": "String",
+									"physicalType": "nvarchar"
+								}
+							},
+							{
+								"source": {
+									"name": "Code departement",
+									"type": "String",
+									"physicalType": "String"
+								},
+								"sink": {
+									"name": "Code departement",
+									"type": "String",
+									"physicalType": "nvarchar"
+								}
+							},
+							{
+								"source": {
+									"name": "Code commune",
+									"type": "String",
+									"physicalType": "String"
+								},
+								"sink": {
+									"name": "Code commune",
+									"type": "String",
+									"physicalType": "nvarchar"
+								}
+							},
+							{
+								"source": {
+									"name": "Prefixe de section",
+									"type": "String",
+									"physicalType": "String"
+								},
+								"sink": {
+									"name": "Prefixe de section",
+									"type": "String",
+									"physicalType": "nvarchar"
+								}
+							},
+							{
+								"source": {
+									"name": "Section",
+									"type": "String",
+									"physicalType": "String"
+								},
+								"sink": {
+									"name": "Section",
+									"type": "String",
+									"physicalType": "nvarchar"
+								}
+							},
+							{
+								"source": {
+									"name": "No plan",
+									"type": "String",
+									"physicalType": "String"
+								},
+								"sink": {
+									"name": "No plan",
+									"type": "String",
+									"physicalType": "nvarchar"
+								}
+							},
+							{
+								"source": {
+									"name": "No Volume",
+									"type": "String",
+									"physicalType": "String"
+								},
+								"sink": {
+									"name": "No Volume",
+									"type": "String",
+									"physicalType": "nvarchar"
+								}
+							},
+							{
+								"source": {
+									"name": "1er lot",
+									"type": "String",
+									"physicalType": "String"
+								},
+								"sink": {
+									"name": "1er lot",
+									"type": "String",
+									"physicalType": "nvarchar"
+								}
+							},
+							{
+								"source": {
+									"name": "Surface Carrez du 1er lot",
+									"type": "String",
+									"physicalType": "String"
+								},
+								"sink": {
+									"name": "Surface Carrez du 1er lot",
+									"type": "String",
+									"physicalType": "nvarchar"
+								}
+							},
+							{
+								"source": {
+									"name": "2eme lot",
+									"type": "String",
+									"physicalType": "String"
+								},
+								"sink": {
+									"name": "2eme lot",
+									"type": "String",
+									"physicalType": "nvarchar"
+								}
+							},
+							{
+								"source": {
+									"name": "Surface Carrez du 2eme lot",
+									"type": "String",
+									"physicalType": "String"
+								},
+								"sink": {
+									"name": "Surface Carrez du 2eme lot",
+									"type": "String",
+									"physicalType": "nvarchar"
+								}
+							},
+							{
+								"source": {
+									"name": "3eme lot",
+									"type": "String",
+									"physicalType": "String"
+								},
+								"sink": {
+									"name": "3eme lot",
+									"type": "String",
+									"physicalType": "nvarchar"
+								}
+							},
+							{
+								"source": {
+									"name": "Surface Carrez du 3eme lot",
+									"type": "String",
+									"physicalType": "String"
+								},
+								"sink": {
+									"name": "Surface Carrez du 3eme lot",
+									"type": "String",
+									"physicalType": "nvarchar"
+								}
+							},
+							{
+								"source": {
+									"name": "4eme lot",
+									"type": "String",
+									"physicalType": "String"
+								},
+								"sink": {
+									"name": "4eme lot",
+									"type": "String",
+									"physicalType": "nvarchar"
+								}
+							},
+							{
+								"source": {
+									"name": "Surface Carrez du 4eme lot",
+									"type": "String",
+									"physicalType": "String"
+								},
+								"sink": {
+									"name": "Surface Carrez du 4eme lot",
+									"type": "String",
+									"physicalType": "nvarchar"
+								}
+							},
+							{
+								"source": {
+									"name": "5eme lot",
+									"type": "String",
+									"physicalType": "String"
+								},
+								"sink": {
+									"name": "5eme lot",
+									"type": "String",
+									"physicalType": "nvarchar"
+								}
+							},
+							{
+								"source": {
+									"name": "Surface Carrez du 5eme lot",
+									"type": "String",
+									"physicalType": "String"
+								},
+								"sink": {
+									"name": "Surface Carrez du 5eme lot",
+									"type": "String",
+									"physicalType": "nvarchar"
+								}
+							},
+							{
+								"source": {
+									"name": "Nombre de lots",
+									"type": "String",
+									"physicalType": "String"
+								},
+								"sink": {
+									"name": "Nombre de lots",
+									"type": "String",
+									"physicalType": "nvarchar"
+								}
+							},
+							{
+								"source": {
+									"name": "Code type local",
+									"type": "String",
+									"physicalType": "String"
+								},
+								"sink": {
+									"name": "Code type local",
+									"type": "String",
+									"physicalType": "nvarchar"
+								}
+							},
+							{
+								"source": {
+									"name": "Type local",
+									"type": "String",
+									"physicalType": "String"
+								},
+								"sink": {
+									"name": "Type local",
+									"type": "String",
+									"physicalType": "nvarchar"
+								}
+							},
+							{
+								"source": {
+									"name": "Identifiant local",
+									"type": "String",
+									"physicalType": "String"
+								},
+								"sink": {
+									"name": "Identifiant local",
+									"type": "String",
+									"physicalType": "nvarchar"
+								}
+							},
+							{
+								"source": {
+									"name": "Surface reelle bati",
+									"type": "String",
+									"physicalType": "String"
+								},
+								"sink": {
+									"name": "Surface reelle bati",
+									"type": "String",
+									"physicalType": "nvarchar"
+								}
+							},
+							{
+								"source": {
+									"name": "Nombre pieces principales",
+									"type": "String",
+									"physicalType": "String"
+								},
+								"sink": {
+									"name": "Nombre pieces principales",
+									"type": "String",
+									"physicalType": "nvarchar"
+								}
+							},
+							{
+								"source": {
+									"name": "Nature culture",
+									"type": "String",
+									"physicalType": "String"
+								},
+								"sink": {
+									"name": "Nature culture",
+									"type": "String",
+									"physicalType": "nvarchar"
+								}
+							},
+							{
+								"source": {
+									"name": "Nature culture speciale",
+									"type": "String",
+									"physicalType": "String"
+								},
+								"sink": {
+									"name": "Nature culture speciale",
+									"type": "String",
+									"physicalType": "nvarchar"
+								}
+							},
+							{
+								"source": {
+									"name": "Surface terrain",
+									"type": "String",
+									"physicalType": "String"
+								},
+								"sink": {
+									"name": "Surface terrain",
+									"type": "String",
+									"physicalType": "nvarchar"
+								}
+							}
+						],
 						"typeConversion": true,
 						"typeConversionSettings": {
 							"allowDataTruncation": true,
@@ -48,13 +561,13 @@
 				},
 				"inputs": [
 					{
-						"referenceName": "consommation",
+						"referenceName": "lake_storage",
 						"type": "DatasetReference"
 					}
 				],
 				"outputs": [
 					{
-						"referenceName": "lake_storage",
+						"referenceName": "AzureSqlTable1",
 						"type": "DatasetReference"
 					}
 				]

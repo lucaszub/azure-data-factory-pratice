@@ -2,7 +2,7 @@
 	"name": "lake_storage",
 	"properties": {
 		"linkedServiceName": {
-			"referenceName": "AzureDataLakeStorage1",
+			"referenceName": "dvf",
 			"type": "LinkedServiceReference"
 		},
 		"annotations": [],
@@ -10,10 +10,11 @@
 		"typeProperties": {
 			"location": {
 				"type": "AzureBlobFSLocation",
-				"folderPath": "consommation-quotidienne-brute",
+				"fileName": "ValeursFoncieres-2025-S1.txt",
+				"folderPath": "dvf/2025",
 				"fileSystem": "raw"
 			},
-			"columnDelimiter": ",",
+			"columnDelimiter": "Pipe (|)",
 			"escapeChar": "\\",
 			"firstRowAsHeader": true,
 			"quoteChar": "\""
